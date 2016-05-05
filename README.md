@@ -1,7 +1,7 @@
 # fasqlitate
 [![Build Status](https://travis-ci.org/davidpeklak/fasqlitate.svg?branch=master)](https://travis-ci.org/davidpeklak/fasqlitate)
 
-A micro-library that fascilitates building java.sql.PreparedStatements in scala.
+A micro-library that facilitates building java.sql.PreparedStatements in scala.
 ## Example
 ```scala
 import fasqlitate._
