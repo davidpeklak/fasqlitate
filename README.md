@@ -12,6 +12,13 @@ val connection: java.sql.Connection
 val i = 3
 val ps = connection.prepareStatement(sql"select * from FOO where BAR = $i")
 ```
+This has the effect of
+```scala
+val connection: java.sql.Connection
+val i = 3
+val ps = connection.prepareStatement("select * from FOO where BAR =  ? ")
+ps.setInt(1, i)
+```
 
 ## Get Started
 Add the following to your `build.sbt`
